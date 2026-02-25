@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TITAN ENGINE</title>
+<link rel="stylesheet" href="">
+<style>
+body{margin:0;background:#050508;color:white;font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh}
+#game{width:420px;background:#111;padding:20px;border-radius:20px;border:2px solid cyan}
+.reels{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:15px}
+.cell{height:70px;background:#000;display:flex;align-items:center;justify-content:center;font-size:28px;border:1px solid #222}
+button{padding:10px;margin-top:10px;width:100%}
+</style>
+</head>
+<body>
+
+<div id="game">
+<h3>💎 <span id="balance"></span> | VIP <span id="vip"></span></h3>
+<div class="reels" id="reels"></div>
+<button onclick="Engine.spin()">SPIN</button>
+</div>
+
+<script src="config.js"></script>
+<script src="storage.js"></script>
+<script src="math.js"></script>
+<script src="engine.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
